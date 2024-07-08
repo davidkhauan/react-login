@@ -1,0 +1,58 @@
+.card-container::before {
+    background-image: url('../../img/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.card-content {
+    background-color: rgba(29, 92, 68, 0.479);
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-content h1 {
+    font-size: 64px;
+    color: whitesmoke;
+}
+
+.card-content p {
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.btn-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-container button {
+    padding: 5px;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s all ease;
+}
+
+.btn-container button:hover {
+    transform: scale(1.05);
+    color: whitesmoke;
+    background-color: black;
+}
